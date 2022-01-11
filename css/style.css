@@ -13,17 +13,20 @@ body {
     width: 100vw;
     background-image: linear-gradient(#00174d, #000000);
 }
-
-.select-box {
+.select-box,
+.play-board {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+}
+.select-box {
     background: #fff;
-
     padding: 20px 25px 25px;
     border-radius: 10px;
+    max-width: 330px;
+    width: 100%;
+    display: none;
 }
 
 .select-box header {
@@ -64,6 +67,42 @@ body {
 .options button.playerX {
     margin-right: 5px;
 }
-.options button.playerY {
+.options button.playerO {
     margin-left: 5px;
+}
+
+.play-board .details {
+    background: #fff;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.play-board .details .players {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.play-board .details span {
+    background: red;
+    width: 100%;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 19px;
+}
+.play-board .play-area {
+    margin-top: 2rem;
+}
+.play-board section {
+    display: flex;
+}
+.play-board section span {
+    display: block;
+    margin: 2px;
+    height: 8rem;
+    width: 8rem;
+    background: #fff;
+    border-radius: 5px;
+}
+.play-board .play-area {
+    margin-top: 2rem;
 }
